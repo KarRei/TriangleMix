@@ -13,7 +13,8 @@ Particle[] parts = new Particle[numParticles];
 PImage albumCover;
 
 void setup() {
-  fullScreen(P3D);
+  //fullScreen(P3D);
+  size(1024, 860, P3D);
   
   // Get info from Spotify Web API
   String baseURL = "https://api.spotify.com/v1/tracks/";
@@ -73,7 +74,7 @@ void draw() {
     }
   }
   drawTriangles();
-}
+  }
 
 void drawTriangles()
 { 
